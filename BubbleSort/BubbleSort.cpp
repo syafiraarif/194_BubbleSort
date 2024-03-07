@@ -48,3 +48,29 @@ void display() {                                  //procedure untuk menampilkan 
 
 }
 
+void bubblesortarray()
+{                        //procedure untuk menentukan array dengan metode bubble sort
+	int pass = 1;                               //stop
+
+	for (pass; pass <= n - 1; pass++)
+	{            // looping dengan i dimulai dari 1 hingga n-1
+		for (int j = 0; j <= n - 1 - pass; j++)
+		{    // looping dengan j dimulai dari 0 hingga n-i
+			if (a[j] > a[j + 1])
+			{                   // jika nilai pada a[j]  lebih besar dari a[j+1] 
+				int temp = a[j];                     // simpan nilai a[j] ke  variabel sementara temp
+				a[j] = a[j + 1];                     // assign nilai a[j+1] ke a[j]
+				a[j + 1] = temp;                     // assign nilai temp ke a[j+1]
+			}
+		}
+
+	}
+}
+
+int main()
+{
+	input();             // memanggil read()
+	bubblesortarray();   // memanggil bubblesortarray()
+	display();           // memanggil display ()
+	return 0;
+}
