@@ -48,7 +48,7 @@ void display() {                                          //procedure untuk mena
 
 }
 
-void bubblesortarray()                          //procedure untuk menentukan array dengan metode bubble sort
+void bubblesortarray()                                //procedure untuk menentukan array dengan metode bubble sort
 {                        
 	int pass = 1;                              
 
